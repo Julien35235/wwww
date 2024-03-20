@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1, h2 {
+    color: #007BFF;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style pour la section de formations */
+h2, ul {
+    margin-top: 30px;
+}
+
+  /* Style pour la conclusion */
+  h2:last-of-type {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+    text-align: right;
+}
