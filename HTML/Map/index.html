@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte du Monde</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="../Map/CSS/styles.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    #map {
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialisation de la carte
+    var map = L.map('map').setView([0, 0], 2);
+
+    // Ajout de la couche OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Ajout de marqueurs pour quelques villes
+    var cities = [
+      { name: 'New York', coordinates: [40.7128, -74.0060] },
+      { name: 'Paris', coordinates: [48.8566, 2.3522] },
+      { name: 'Tokyo', coordinates: [35.6895, 139.6917] }
+    ];
+
+    cities.forEach(function(city) {
+      L.marker(city.coordinates).addTo(map).bindPopup(city.name);
+    });
+  </script>
+</body>
+</html>

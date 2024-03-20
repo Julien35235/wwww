@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <title>Recherche avancée</title>
+</head>
+<body>
+    <header class="header__advanced">
+        <a href="index.html">
+            <img src="images/googlelogo_color_272x92dp.png" width="92px" alt="Google">
+        </a>
+        <a class="header header__link" href="index.html">Recherche Google</a>
+    </header>
+
+    <main class="main main--advanced">
+        <section class="section-advanced">
+            <div class="heading">
+                <div class="heading__text">
+                    Recherche avancée
+                </div>
+            </div>
+
+            <form action="https://www.google.com/search" class="form-advanced">
+                <div class="heading__sub">
+                    <div class="heading__sub--1">Trouver des pages avec ...</div>
+                    <div class="heading__sub--2">Pour ce faire, dans la boîte de recherche</div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="1" class="form-advanced__label">tous ces mots :</label>
+                        <input id="1" type="text" name="as_q" class="form-advanced__input" autofocus>
+                        <span class="form-advanced__span">Tapez les mots importants :tri-colour rat terrier</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="2" class="form-advanced__label">ce mot ou cette phrase exacte :</label>
+                        <input type="text" name="as_epq" id="2" class="form-advanced__input">
+                        <span class="form-advanced__span">Mettez les mots exacts entre guillemets : ""</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="3" class="form-advanced__label">l'un ou l'autre de ces mots :</label>
+                        <input type="text" name="as_oq" id="3" class="form-advanced__input">
+                        <span class="form-advanced__span">Tapez OR entre tous les mots que vous voulez : miniature OR standard</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="4" class="form-advanced__label">aucun de ces mots :</label>
+                        <input type="text" name="as_eq" id="4" class="form-advanced__input">
+                        <span class="form-advanced__span">Mettez un signe moins juste avant les mots que vous ne voulez pas : -rongeur</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="5" class="form-advanced__label">des nombres allant de :</label>
+                        <input type="text" name="as_nlo" id="5" class="form-advanced__input form-advanced__input--1">
+                        <input type="text" name="as_nhi" class="form-advanced__input form-advanced__input--2">
+                        <span class="form-advanced__span">Mettez deux points entre les nombres et ajoutez une unité de mesure : 10..35 kg, £300..£500, 2010..2011</span>
+                    </div>
+                    
+                    <div class="form__button">
+                        <input class="form__button--advanced" type="submit" value="Recherche avancée">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer style="margin-top:-15px;margin-right:15px;text-align: right;" class="footer"></footer>
+</body>
+</html>
