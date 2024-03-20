@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>MDP</title>
+</head>
+<body>
+<script src="js/script.js"></script>
+</body>
+<h1>Gestionnaire de mots de passe</h1>
+    <form id="passwordForm">
+        <label for="url">URL :</label>
+        <input type="text" id="url" name="url" required><br>
+
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="expirationDate">Date d'expiration :</label>
+        <input type="date" id="expirationDate" name="expirationDate"><br>
+
+        <label for="comments">Commentaires :</label>
+        <textarea id="comments" name="comments" rows="4"></textarea><br>
+
+        <button type="button" onclick="enregistrerEntree()">Enregistrer l'entrée</button>
+    </form>
+
+    <div id="passwordList">
+        <h2>Entrées existantes</h2>
+        <ul id="entriesList"></ul>
+    </div>
+</html>

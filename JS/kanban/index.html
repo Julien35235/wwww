@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kanban Board</title>
+</head>
+<body>
+    <div class="kanban-container">
+        <div class="column" id="todo-column">
+            <div class="column-header">À faire</div>
+            <div class="card" draggable="true">Tâche 1</div>
+            <div class="card" draggable="true">Tâche 1</div>
+            <div class="card" draggable="true">Tâche 777</div>
+            
+            <!-- Ajout de nouvelles cartes -->
+            <div class="card" draggable="true">Tâche 3</div>
+            <div class="card" draggable="true">Tâche 4</div>
+            <div class="card" draggable="true">Tâche 888 </div>
+        </div>
+        <div class="column" id="in-progress-column">
+            <div class="column-header">En cours</div>
+            <!-- Ajout de nouvelles cartes -->
+            <div class="card" draggable="true">Tâche 5</div>
+            <div class="card" draggable="true">Tâche 6578</div>
+        </div>
+        <div class="column" id="done-column">
+            <div class="column-header">Terminé</div>
+            <!-- Ajout de nouvelles cartes -->
+            <div class="card" draggable="true">Tâche 6</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

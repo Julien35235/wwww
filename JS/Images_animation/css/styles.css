@@ -1,0 +1,49 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#slider {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Styles pour l'image */
+#slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles pour le titre h2 */
+#slider h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+/* Styles pour les boutons */
+#slider button {
+    font-size: 1em;
+    margin: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Styles spécifiques pour les boutons Avancer et Reculer */
+#slider button:nth-child(2) {
+    margin-left: 20px;
+}
+
+/* Style pour le bouton Play/Stop */
+#slider button:last-child {
+    margin-top: 20px;
+    background-color: #ff0000; /* couleur rouge pour Stop */
+    color: #fff;
+}
+
+/* Style pour le bouton Play lorsqu'il est en mode Play */
+#slider button:last-child.play {
+    background-color: #00ff00; /* couleur verte pour Play */
+}

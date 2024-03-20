@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api weather</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Ville : </legend>
+        <form name="cityForm" method="GET" action="">
+            <label for="cityField">Ville : </label>
+            <input type="text" id="cityField" name="city"/>
+            <input type="submit" value="Chercher" />
+        </form> 
+    </fieldset>
+    <div id="weather">
+        <p>
+            <strong>Ville : </strong>
+            <span id="ville"></span>
+        </p>
+        <p>
+            <strong>Résumé : </strong>
+            <span id="resume"></span>
+        </p>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>

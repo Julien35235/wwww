@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Gestion de Documents</title>
+    <script>
+        function openfilleDocumentsMethod() {
+            function afficher_permis_conduire(numero, nom, date_expiration) {
+                console.log("Permis de conduire :");
+                console.log("Numéro : ", numero);
+                console.log("Nom : ", nom);
+                console.log("Date d'expiration : ", date_expiration);
+            }
+
+            function afficher_certificat_assurance(numero_police, compagnie_assurance, date_expiration) {
+                console.log("Certificat d'assurance :");
+                console.log("Numéro de police : ", numero_police);
+                console.log("Compagnie d'assurance : ", compagnie_assurance);
+                console.log("Date d'expiration : ", date_expiration);
+            }
+
+            function afficher_certificat_immatriculation(numero_plaque, proprietaire, date_expiration) {
+                console.log("Certificat d'immatriculation :");
+                console.log("Numéro de plaque : ", numero_plaque);
+                console.log("Propriétaire : ", proprietaire);
+                console.log("Date d'expiration : ", date_expiration);
+            }
+
+            function afficher_controle_technique(date_dernier_controle, prochain_controle) {
+                console.log("Contrôle technique :");
+                console.log("Dernier contrôle : ", date_dernier_controle);
+                console.log("Prochain contrôle : ", prochain_controle);
+            }
+
+            function afficher_carnet_entretien(dernier_entretien, prochain_entretien) {
+                console.log("Carnet d'entretien :");
+                console.log("Dernier entretien : ", dernier_entretien);
+                console.log("Prochain entretien : ", prochain_entretien);
+            }
+
+            function afficher_disque_stationnement(heure_debut, heure_fin) {
+                console.log("Disque de stationnement :");
+                console.log("Heure de début : ", heure_debut);
+                console.log("Heure de fin : ", heure_fin);
+            }
+
+            // Boucle principale
+            while (true) {
+                console.log("Menu principal :");
+                console.log("1. Permis de conduire");
+                console.log("2. Certificat d'assurance");
+                console.log("3. Certificat d'immatriculation");
+                console.log("4. Contrôle technique");
+                console.log("5. Carnet d'entretien");
+                console.log("6. Disque de stationnement");
+                console.log("0. Quitter le programme");
+
+                let choix = prompt("Sélectionnez une option : ");
+
+                if (choix === "1") {
+                    let numero = prompt("Numéro du permis de conduire : ");
+                    let nom = prompt("Nom du titulaire du permis : ");
+                    let date_expiration = prompt("Date d'expiration du permis : ");
+                    afficher_permis_conduire(numero, nom, date_expiration);
+                } else if (choix === "2") {
+                    let numero_police = prompt("Numéro de l'assurance : ");
+                    let compagnie_assurance = prompt("Compagnie d'assurance : ");
+                    let date_expiration = prompt("Date d'expiration de l'assurance : ");
+                    afficher_certificat_assurance(numero_police, compagnie_assurance, date_expiration);
+                } else if (choix === "3") {
+                    let numero_plaque = prompt("Numéro de plaque du véhicule : ");
+                    let proprietaire = prompt("Propriétaire du véhicule : ");
+                    let date_expiration = prompt("Date d'expiration du certificat d'immatriculation : ");
+                    afficher_certificat_immatriculation(numero_plaque, proprietaire, date_expiration);
+                } else if (choix === "4") {
+                    let date_dernier_controle = prompt("Date du dernier contrôle technique : ");
+                    let prochain_controle = prompt("Date du prochain contrôle technique : ");
+                    afficher_controle_technique(date_dernier_controle, prochain_controle);
+                } else if (choix === "5") {
+                    let dernier_entretien = prompt("Date du dernier entretien : ");
+                    let prochain_entretien = prompt("Date du prochain entretien : ");
+                    afficher_carnet_entretien(dernier_entretien, prochain_entretien);
+                } else if (choix === "6") {
+                    let heure_debut = prompt("Heure de début du stationnement : ");
+                    let heure_fin = prompt("Heure de fin du stationnement : ");
+                    afficher_disque_stationnement(heure_debut, heure_fin);
+                } else if (choix === "0") {
+                    console.log("Merci d'avoir utilisé le programme. Au revoir!");
+                    break;
+                } else {
+                    console.log("Option invalide. Veuillez sélectionner une option valide.");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Application de Gestion de Documents</h1>
+    <script>
+        // Appel de la fonction principale
+        openfilleDocumentsMethod();
+    </script>
+</body>
+</html>
